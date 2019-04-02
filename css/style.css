@@ -1,6 +1,69 @@
-.container {}
+
+.body {
+	
+
+}
+.container {
+	max-width: 1920px;
+	margin-right: 0;
+  	margin-left: 0;
+  	width: 100%;
+  	position: relative;
+}
 
 .top {
-	background-image: ;
-	background-color: 1a1a70;
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	position: relative;
+	background-color: #0a0e34;
+
 }
+
+.football {
+	max-width: 100%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	opacity: 0.1;
+}
+
+.header {
+	
+	width: 100%;
+	top: 45px;
+	position: absolute;
+	display: flex;
+  	justify-content: center;
+  	
+}
+
+.logo {
+	width: 9.95%;
+	height: 2.7%;
+	fill: #ffffff;
+}
+
+.title_box {
+	
+
+}
+
+.slogan_firstline, .slogan_secondline {
+	font-family: OpenSans-Bold;
+	font-size: 4.687hw;
+	font-weight: 700;
+	color: #ffffff;
+	text-transform: uppercase;
+	position: absolute;
+	top: 20.42hw;
+
+}
+
+.slogan_firstline {
+	margin-left: 10%;
+}	
+	
+
+.slogan_secondline {
+	margin-left: 34.5833%;
+	
