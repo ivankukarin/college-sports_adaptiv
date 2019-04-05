@@ -7,7 +7,8 @@ body {
 }
 .container {
 	max-width: 1920px;
-	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 0;
   	width: 100%;
   	position: relative;
@@ -164,10 +165,18 @@ body {
 
 
 
+.athlets.container {
+	max-width: 100%;
+    height: 50vw;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
 .box_athlets_first, 
 .box_athlets_second, 
 .box_athlets_third {
-	padding-left: 52.55vw;
+	padding-left: 52.55%;
 	padding-top: 1.25em;
 
 }
@@ -188,7 +197,7 @@ body {
 	margin-bottom: 1.5em;
 	font-family: sans-serif;
 	font-size: 4.1667vw;
-	line-height: 60px;
+	line-height: 3.12vw;
 	font-weight: 700;
 	color: #e7e7e7;
 	text-transform: uppercase;
@@ -205,39 +214,40 @@ body {
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	color: #c1c1c1;
-
+	
 	
 	display: flex;
 	flex-wrap: wrap;
+	align-content: center;
 	
-
-	border: solid 1px red;
+	
 }
 
 
 .icon_subtitle_first_box {
+	height: 1.3041vw;
 	margin-top: auto;
-	width: 0.98958vw;
-	height: 1.3542vw;
+	margin-bottom: auto;
+	width: 1.098958vw;
+	height: 1.354vw;
 	display: flex;
 	flex-wrap: wrap;
-	
-	
 	margin-right: 0.7292vw;
-
+	align-content: space-between;
 	
-
 }
 
 .number_one {
-	margin-bottom: auto;
+	
+	
 }
 
 .underline_violet {
-	width: 0.98958vw;
-	margin-top: auto;
-	
+	width: 1.298958vw;
+
+
 }
+
 .text_athlets_first_box,
 .text_athlets_second_box,
 .text_athlets_third_box {
@@ -246,7 +256,7 @@ body {
 	font-size: 20px;
 	padding-bottom: 2em;
 	line-height: 1.2;
-	font-weight: 400;
+	font-weight: 500;
 	letter-spacing: 0.05em;
 	color: #000000;
 	z-index: 1;
