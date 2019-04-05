@@ -170,6 +170,7 @@ body {
     height: 50vw;
     margin-left: 0;
     margin-right: 0;
+    position: relative;
 }
 
 
@@ -188,7 +189,7 @@ body {
 
 .box_athlets_third {
 	background-color: #5e3db3;
-	border: solid 1px #5e3db3;
+	border: solid 1px #5e3db3;  /*почему без этой рамки появляется поле без фона, а с ней весь блок покрыт фоновым цветом?*/
 	
 }
 
@@ -234,26 +235,41 @@ body {
 	flex-wrap: wrap;
 	margin-right: 0.7292vw;
 	align-content: space-between;
+	justify-content: center;
 	
 }
 
-.number_one {
-	
+.number_one,
+.number_two,
+.number_three {
+	width: 1.038958vw;
+	height: 0.65vw;
 	
 }
 
 .underline_violet {
+	fill: #5e42b0;
+	width: 1.198958vw;
+}
+
+
+.underline_white {
+	fill: #efefef;
+}
+
+
+/*.underline_violet {
 	width: 1.298958vw;
 
+*/
 
-}
 
 .text_athlets_first_box,
 .text_athlets_second_box,
 .text_athlets_third_box {
-
+	width: 36.4583vw;
 	font-family: sans-serif;
-	font-size: 20px;
+	font-size: 1.034166vw;
 	padding-bottom: 2em;
 	line-height: 1.2;
 	font-weight: 500;
@@ -266,5 +282,18 @@ body {
 
 
 .text_athlets_third_box {
-	color: #c1c1c1;
+	color: #ffffff;
+}
+
+
+.footballer {
+	width: 29.4791vw;
+	height: 47.2916vw;
+	position: relative;
+	top: 1.40625vw;
+	left: 20.4167vw;
+	z-index: 999;
+	background-image: url("../img/footballer_566.png");
+	background-repeat: no-repeat;
+	
 }
