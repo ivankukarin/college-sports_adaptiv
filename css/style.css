@@ -165,12 +165,14 @@ body {
 
 
 
-.athlets.container {
+.athlets.container,
+.players.container {
 	max-width: 100%;
     height: 50vw;
     margin-left: 0;
     margin-right: 0;
     position: relative;
+    z-index: 1;
 }
 
 
@@ -179,35 +181,42 @@ body {
 .box_athlets_third {
 	padding-left: 52.55%;
 	padding-top: 1.25em;
-
+	z-index: 1;
 }
 
-.box_athlets_second {
+.box_athlets_second,
+.box_players_second  {
 	background-color: #efefef;
 	border: solid 1px #efefef;
+	z-index: 1;
 }
 
 .box_athlets_third {
 	background-color: #5e3db3;
 	border: solid 1px #5e3db3;  /*почему без этой рамки появляется поле без фона, а с ней весь блок покрыт фоновым цветом?*/
-	
+	z-index: 1;
 }
 
-.athlets_title_h2 {
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
+.athlets_title_h2,
+.players_title_h2  {
+	margin-top: 1.2em;
+	margin-bottom: 1.2em;
 	font-family: sans-serif;
 	font-size: 4.1667vw;
 	line-height: 3.12vw;
 	font-weight: 700;
 	color: #e7e7e7;
 	text-transform: uppercase;
+	z-index: 1;
 
 }
 
 .athlets_subtitle_first_box,
 .athlets_subtitle_second_box,
-.athlets_subtitle_third_box {
+.athlets_subtitle_third_box,
+.players_subtitle_first_box,
+.players_subtitle_second_box,
+.players_subtitle_third_box {
 	font-family: sans-serif;
 	font-size: 1.875vw;
 	line-height: 26px;
@@ -215,7 +224,7 @@ body {
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	color: #c1c1c1;
-	
+	z-index: 1;
 	
 	display: flex;
 	flex-wrap: wrap;
@@ -236,6 +245,7 @@ body {
 	margin-right: 0.7292vw;
 	align-content: space-between;
 	justify-content: center;
+	z-index: 1;
 	
 }
 
@@ -244,17 +254,20 @@ body {
 .number_three {
 	width: 1.038958vw;
 	height: 0.65vw;
+	z-index: 1;
 	
 }
 
 .underline_violet {
 	fill: #5e42b0;
 	width: 1.198958vw;
+	z-index: 1;
 }
 
 
 .underline_white {
 	fill: #efefef;
+	z-index: 1;
 }
 
 
@@ -266,7 +279,10 @@ body {
 
 .text_athlets_first_box,
 .text_athlets_second_box,
-.text_athlets_third_box {
+.text_athlets_third_box,
+.text_players_first_box,
+.text_players_second_box,
+.text_players_third_box {
 	width: 36.4583vw;
 	font-family: sans-serif;
 	font-size: 1.034166vw;
@@ -278,22 +294,74 @@ body {
 	z-index: 1;
 	position: relative;
 
+
 }
 
 
-.text_athlets_third_box {
+.text_athlets_third_box,
+.text_players_third_box {
 	color: #ffffff;
+	z-index: 1;
 }
 
 
 .footballer {
 	width: 29.4791vw;
 	height: 47.2916vw;
-	position: relative;
-	top: 1.40625vw;
+	position: absolute;
+	top: 51.4625vw;
 	left: 20.4167vw;
-	z-index: 999;
+	z-index: 777;
 	background-image: url("../img/footballer_566.png");
 	background-repeat: no-repeat;
+	background-size: cover;
 	
 }
+
+.box_players_first, 
+.box_players_second, 
+.box_players_third {
+	padding-left: 10%;
+	padding-top: 1.25em;
+	z-index: 1;
+}
+
+
+.box_players_third {
+	background-color: #0a0e34;
+	border: solid 1px #0a0e34;  /*почему без этой рамки появляется поле без фона, а с ней весь блок покрыт фоновым цветом?*/
+	z-index: 1;
+}
+
+.basketballer {
+	width: 51.6145vw;
+	height: 42.4479vw;
+	position: absolute;
+	top: 97.3958vw;
+	left: 41.875vw;
+	z-index: 888;
+	background-image: url("../img/basketballer_991.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.card_container {
+	position: relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.card_at_bridge {
+	background-image: 
+	background-size
+	background-repeat
+	background-color
+	flex-basis: 40%
+		
+}
+
+
