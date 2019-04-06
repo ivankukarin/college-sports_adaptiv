@@ -229,7 +229,6 @@ body {
 	letter-spacing: 0.05em;
 	color: #c1c1c1;
 	z-index: 1;
-	
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
@@ -365,7 +364,7 @@ body {
 
 .card_title {
 	position: relative;
-	flex-basis: 40%
+	flex-basis: 50%;
 }
 
 .card_be_active {
@@ -374,11 +373,10 @@ body {
 	margin-left: 0;
 	margin-right: 0;
 	position: relative;
-	background: url(../img/be-active_1024.jpg);
+	background: url(../img/be-active_960.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-color: #cbe7fd;
-	
 
 	
 		
@@ -387,7 +385,7 @@ body {
 .card_find_contact {
 	width: 50%;
 	height: 38.02083vw;
-	background-image: url(../img/find-contact_1024.jpg);
+	background-image: url(../img/find-contact_960.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-color: #e2685c;
@@ -397,7 +395,7 @@ body {
 .card_work_it {
 	width: 50%;
 	height: 38.02083vw;
-	background-image: url(../img/work-it_1024.jpg);
+	background-image: url(../img/work-it_960.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: #5b7aac;
