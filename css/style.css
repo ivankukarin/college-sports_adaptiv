@@ -51,15 +51,22 @@ body {
 	fill: #ffffff;
 	position: relative;
 	z-index: 1;
-}
+}	
 
 .title_box {
+	max-width: 100%;
+	padding-left: 10%;
 	
-	margin-left: auto;
-	margin-right: auto;
 	top: 37.3333%;
 	position: relative;
 	z-index: 1;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	
 }
 
 .h1-header {
@@ -78,6 +85,8 @@ body {
 .slogan_secondline {
 	margin-left: 26.5833%;
 }
+	
+
 
 .apps_buttons {
 	margin-top: 28.0625vw;
@@ -163,6 +172,11 @@ body {
 	margin-top: 0;
 }
 
+
+.athles_container {
+	position: relative;
+
+}
 
 .box_athlets_first, 
 .box_athlets_second, 
@@ -291,13 +305,17 @@ body {
 	width: 29.4791vw;
 	height: 47.2916vw;
 	position: absolute;
-	top: 51.4625vw;
+	top: 1.40625vw;
 	left: 20.4167vw;
 	z-index: 777;
 	background-image: url("../img/footballer_566.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	
+}
+
+.players_container {
+	position: relative;
 }
 
 .box_players_first, 
@@ -319,12 +337,12 @@ body {
 	width: 51.6145vw;
 	height: 42.4479vw;
 	position: absolute;
-	top: 97.3958vw;
+	top: 1.1979vw;
 	left: 41.875vw;
 	z-index: 888;
 	background-image: url("../img/basketballer_991.png");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 }
 
 
@@ -600,11 +618,7 @@ body {
     display: flex;
     flex-direction: column;
     
-    
-
-
-   
-}
+  }
 
 
 
@@ -638,8 +652,7 @@ body {
 
 .title_box_footer {
 	position: relative;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 	z-index: 1;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -659,7 +672,7 @@ body {
     background-size: contain;
     position: relative;
     z-index: 1;
-    align-self: center;
+    
 	
 }
 
@@ -707,7 +720,7 @@ body {
 	
 	width: 100%;
 	height: 4.0104vw;
-	
+	margin-bottom: auto;
 	position: relative;
 	z-index: 1;	
 	display: -webkit-flex;
@@ -722,16 +735,45 @@ body {
 	
 	/*padding-top: 2.70833vw;
 	padding-bottom: 2.70833vw;*/
-	margin-right: auto;
-	margin-left: auto;
+	margin: auto;
 	padding: 0;
 	width: 9.95%;
 	height: 2.7%;
 	fill: #ffffff;
 	position: relative;
 	z-index: 1;
-	align-items: flex-end;
+	
 }
 
+.wrapper-for-title_box_footer {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-basis: 55%;
+	
+}
 
+.wrapper-apps-buttons-footer {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
 
+	flex-basis: 25%;
+
+	
+}
+
+.wrapper-logo-surface-footer {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-basis: 1%;
+
+	
+}
