@@ -40,7 +40,7 @@ body {
 }
 
 
-.logo {
+.logo-header {
 	
 	top: 2.34375vw;
 	margin-right: auto;
@@ -62,18 +62,18 @@ body {
 	z-index: 1;
 }
 
-.slogan {
+.h1-header {
+	margin-left: 10%;
 	font-family: sans-serif;
 	font-size: 4.6875vw;
 	color: #ffffff;
 	text-transform: uppercase;
 	padding: 0;
 	margin: 0;
-	}
 
-.slogan {
-	margin-left: 10%;
 }
+
+
 
 .slogan_secondline {
 	margin-left: 26.5833%;
@@ -149,7 +149,7 @@ body {
 	font-family: sans-serif;
 	font-size: 0.69916vw;
 	line-height: 0.17083vw;
-	font-weight: 400;
+	font-weight: 300;
 	text-transform: uppercase;
 	letter-spacing: 0.04em;
 	color: #ffffff;
@@ -454,6 +454,7 @@ body {
 	color: #000000;
 }
 
+
 .square_first {
 	top: 10.9896%;
 	left: calc((100% - 8.75vW)/2);
@@ -474,8 +475,6 @@ body {
 	z-index: 777;
 }
 
-
-
 .number_one_gallery {
 	margin-left: auto;
 	margin-right: auto;
@@ -486,7 +485,7 @@ body {
 
 	background-image: url("../img/01_number_gallery_1920.png");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	
 }
 
@@ -502,8 +501,8 @@ body {
 	opacity: 0.3;
 }
 
-.square_first {
-	top: 10.9896%;
+.square_second {
+	top: calc(10.9896% + 38.020833vw);
 	left: calc((100% - 8.75vW)/2);
 
 	width: 8.75vw;
@@ -522,8 +521,23 @@ body {
 	z-index: 777;
 }
 
-.square_first {
-	top: 10.9896%+
+.number_second_gallery {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0.46875vw;
+	position: relative;
+	width: 1.3521vw;
+	height: 0.9896vw;
+
+	background-image: url("../img/02_number_gallery_1920.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+}
+
+
+.square_third {
+	top: calc(10.9896% + 38.020833vw + 38.020833vw);
 	left: calc((100% - 8.75vW)/2);
 
 	width: 8.75vw;
@@ -541,3 +555,183 @@ body {
 	align-content: center;
 	z-index: 777;
 }
+
+
+.number_third_gallery {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0.46875vw;
+	position: relative;
+	width: 1.3521vw;
+	height: 0.9896vw;
+
+	background-image: url("../img/03_number_gallery_1920.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.wrapper {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer {
+	max-width: 100%;
+    height: 50vw;
+    margin-left: 0;
+    margin-right: 0;
+    background-image: url("../img/game_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    
+    
+
+
+   
+}
+
+
+
+.footer::after {
+	
+	content: '';
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0a0e34;
+    opacity: 0.9;
+}
+
+.wrapper2 {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	
+}
+
+.title_box_footer {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	
+
+}
+
+.title-logo-footer {
+	width: 6.7708vw;
+	height: 07.1354vw;
+	background-image: url("../img/logo_1920_footer.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+    align-self: center;
+	
+}
+
+.h1-box {
+	margin-left: 1.9271vw;
+	position: relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	z-index: 1;
+	
+
+}
+
+.h1-footer {
+	position: relative;
+	margin-top: 0;
+	margin-bottom: 0;
+	z-index: 1;
+	font-family: sans-serif;
+	font-size: 4.167vw;
+	color: #ffffff;
+	text-transform: uppercase;
+	
+}
+
+.text-undertitle-footer {
+	
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: sans-serif;
+	font-size: 1.1458vw;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #a496ca;
+	z-index: 1;
+	position: relative;
+}
+
+.apps-buttons-footer {
+	
+	width: 100%;
+	height: 4.0104vw;
+	
+	position: relative;
+	z-index: 1;	
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	
+}
+
+.logo-surface-footer {
+	
+	/*padding-top: 2.70833vw;
+	padding-bottom: 2.70833vw;*/
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0;
+	width: 9.95%;
+	height: 2.7%;
+	fill: #ffffff;
+	position: relative;
+	z-index: 1;
+	align-items: flex-end;
+}
+
+
+
