@@ -1,8 +1,11 @@
 
 body {
+	width: 100%;
+	max-width: 1920px;
 	margin: 0;
 	padding: 0;
 	background-color: #ffffff;
+	position: relative;
 
 }
 .container {
@@ -16,17 +19,14 @@ body {
 
 .header {
     max-width: 100%;
-    min-height: 50vw;
+   
     width: 100%;
     margin: 0;
     padding: 0;
-    background: url(../img/football_1920.jpg);
+    background: url(../img/football_1920.jpg) no-repeat 50% 50%;
     display: flex;
-	
-  	
-  
-    background-repeat: no-repeat;
-    position: relative;
+	background-size: cover;
+  	position: relative;
     flex-direction: column;
 	justify-content: space-between;
 	
@@ -94,7 +94,8 @@ body {
 	
 	max-width: 100%;
 	padding-left: 10%;
-	
+	margin-top: 15.364vw;
+	margin-bottom: 11.5625vw;
 	
 	position: relative;
 	z-index: 1;
@@ -403,6 +404,14 @@ body {
 
 }
 
+.be-active,
+.find-contact,
+.work-it {
+	width: 100%;
+	display: flex;
+	position: relative;
+
+}
 .card_title {
 	position: relative;
 	flex-basis: 50%;
@@ -498,6 +507,9 @@ body {
 	margin-right: auto;
 }
 
+.number_of_title {
+
+}
 
 .text_be_active,
 .text_find_contact,
@@ -512,15 +524,14 @@ body {
 }
 
 
-.square_first {
-	top: 10.9896%;
+.square_violet {
+	top: 12vw;
 	left: calc((100% - 8.75vW)/2);
-
 	width: 8.75vw;
-	height: 8.072917vw;
-
+	/*height: 8.072917vw;*/
 	position: absolute;
 	background-image: url(../img/rectangle_3_1920.png);
+	background-size: 8.75vw 8.072917vw;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -532,124 +543,15 @@ body {
 	z-index: 777;
 }
 
-.number_one_gallery {
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 0.46875vw;
-	position: relative;
-	width: 1.3021vw;
-	height: 0.9896vw;
-
-	background-image: url("../img/01_number_gallery_1920.png");
-	background-repeat: no-repeat;
-	background-size: contain;
-	
-}
-
-.subline_gallery {
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	width: 1.3021vw;
-	height: 0.2064vw;
-	background-image: url("../img/subline_number_gallery.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	opacity: 0.3;
-}
-
-.square_second {
-	top: calc(10.9896% + 38.020833vw);
-	left: calc((100% - 8.75vW)/2);
-
-	width: 8.75vw;
-	height: 8.072917vw;
-
-	position: absolute;
-	background-image: url(../img/rectangle_3_1920.png);
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
-	z-index: 777;
-}
-
-.number_second_gallery {
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 0.46875vw;
-	position: relative;
-	width: 1.3521vw;
-	height: 0.9896vw;
-
-	background-image: url("../img/02_number_gallery_1920.png");
-	background-repeat: no-repeat;
-	background-size: contain;
-	
-}
-
-
-.square_third {
-	top: calc(10.9896% + 38.020833vw + 38.020833vw);
-	left: calc((100% - 8.75vW)/2);
-
-	width: 8.75vw;
-	height: 8.072917vw;
-
-	position: absolute;
-	background-image: url(../img/rectangle_3_1920.png);
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
-	z-index: 777;
-}
-
-
-.number_third_gallery {
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 0.46875vw;
-	position: relative;
-	width: 1.3521vw;
-	height: 0.9896vw;
-
-	background-image: url("../img/03_number_gallery_1920.png");
-	background-repeat: no-repeat;
-	background-size: contain;
-}
-
-
-
-.wrapper {
-	margin: 0;
-	padding: 0;
-	position: relative;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	flex-direction: column;
-}
 
 .footer {
 	max-width: 100%;
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    background-image: url("../img/game_1920.jpg");
-    background-size: 100% 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../img/game_1920.jpg) 50% 50%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: relative;
     display: -webkit-flex;
     display: -moz-flex;
@@ -657,6 +559,7 @@ body {
     display: -o-flex;
     display: flex;
     flex-direction: column;
+    z-index: 1;
     
   }
 
@@ -675,24 +578,14 @@ body {
     opacity: 0.9;
 }
 
-.wrapper2 {
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	z-index: 1;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	
-}
+
 
 .title_box_footer {
 	position: relative;
-	margin: auto;
+	margin-top: 11.927vw;
+	margin-bottom: 7.865vw;
+	margin-left: auto;
+	margin-right: auto;
 	z-index: 1;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -707,6 +600,7 @@ body {
 .title-logo-footer {
 	width: 6.7708vw;
 	height: 07.1354vw;
+	
 	background-image: url("../img/logo_1920_footer.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -716,7 +610,7 @@ body {
 	
 }
 
-.h1-box {
+.h2-box {
 	margin-left: 1.9271vw;
 	position: relative;
 	display: -webkit-flex;
@@ -731,7 +625,7 @@ body {
 
 }
 
-.h1-footer {
+.h2-footer {
 	position: relative;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -760,6 +654,8 @@ body {
 	
 	width: 100%;
 	height: 4.0104vw;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: auto;
 	position: relative;
 	z-index: 1;	
@@ -772,48 +668,16 @@ body {
 }
 
 .logo-surface-footer {
-	
-	/*padding-top: 2.70833vw;
-	padding-bottom: 2.70833vw;*/
-	margin: auto;
+	margin-top: 13.646vw;
+	margin-bottom: 2.7083vw;
+	margin-left: auto;
+	margin-right: auto;
+
 	padding: 0;
 	width: 9.95%;
 	height: 2.7%;
 	fill: #ffffff;
 	position: relative;
 	z-index: 1;
-	
-}
-
-.wrapper-for-title_box_footer {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	flex-basis: 55%;
-	
-}
-
-.wrapper-apps-buttons-footer {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-
-	flex-basis: 25%;
-
-	
-}
-
-.wrapper-logo-surface-footer {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	flex-basis: 1%;
-
 	
 }
