@@ -63,34 +63,12 @@ body {
 	}
 		
 	.ios, .android {
-	width: calc(16.1979vw * 2);
-	background-size: 100% calc(4.0104vw * 2);
+	width: 32.396vw;
+	height: 8.0208vw;
+	background-size: 100% 8.0208vw;
 	}
 
-	.ios {
-	margin-right: 1.5625vw;
-	}
-
-	.android {
-	margin-left: 1.5625vw;
-	}
-	.ios_icon, .android_icon {
-	width: calc(14.5048% * 2);
-		height: calc(62.3377% * )2;
-	margin-top: calc(0.5729vw *2 );
-		margin-left: calc(1.9792vw*2);
-	}
-	.android_icon {
-		margin-left: calc(2.3792vw * 2);
-	}
-	.box_text_btn {
-	margin-left: calc(1.1979vw * 2);
-		margin-top: calc(0.9vw * 2);
-		margin-bottom: calc(1.1979vw * 2);
-	}
-	.download, .store {
-	font-size: calc(0.78125vw * 2);
-
+	
 }
 
 @media (max-width: 640px) {
@@ -110,12 +88,10 @@ body {
 		margin-top: 42.5vw;
 		margin-bottom: 27.82vw;
 	}
-
-
 }
 
 
-}
+
 
 .header::after {
 	
@@ -136,7 +112,6 @@ body {
 	
 	margin-right: auto;
 	margin-left: auto;
-	
 	
 }
 	
@@ -207,6 +182,7 @@ body {
 .ios, .android {
 	background-image: url("../img/pryamougolnik_skrugl_ugly_1_kopiya_949.png");
 	width: 16.1979vw;
+	height: 4.0104vw;
 	padding: 0;
 	background-repeat: no-repeat;
 	background-size: 100% 4.0104vw;
@@ -219,12 +195,14 @@ body {
 	display: flex;
 	position: relative;
 	text-decoration: none;
+	
 }
 
 .ios {
 	margin-left: auto;
 	margin-right: 1.3020vw;
 	display: flex;
+
 }
 
 .android {
@@ -236,31 +214,31 @@ body {
 	width: 14.5048%;
 	height: 62.3377%;
 	fill: #ffffff;
-	margin-top: 0.5729vw;
-	margin-left: 1.9792vw;
+	margin-top:  3.537%;
+	margin-left: 12.22%;;
 	position: relative;
 	z-index: 2;	
 
 }
 
 .android_icon {
-	margin-left: 2.3792vw;
+	margin-left: 12.22%;
 }
 
 .box_text_btn {
-	padding: 0;
-	margin-left: 1.1979vw;
-	margin-top: 0.9vw;
-	margin-bottom: 1.1979vw;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 8.039%;
 	position: relative;
-	z-index: 2;	
+	z-index: 1;	
+	display: flex;
 	flex-wrap: nowrap;
-	
+	flex-direction: column;
+	justify-content: center;
 }
 
  .download, .store {
 	
-
 	font-family: 'Open Sans', sans-serif;
 	font-size: 0.78125vw;
 	font-weight: 300;
@@ -268,12 +246,11 @@ body {
 	color: #ffffff;
 	position: relative;
 	z-index: 2;	
-	
 }
 	
 .store {
 	font-weight: 700;
-	margin-top: 0;
+	
 } 
 
 
