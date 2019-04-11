@@ -164,6 +164,7 @@ body {
 	display: -o-flex;
 	display: flex;
 	position: relative;
+	text-decoration: none;
 }
 
 .ios {
@@ -194,20 +195,20 @@ body {
 
 .box_text_btn {
 	padding: 0;
-	margin-left: 1.437rem;
-	margin-top: 1.437rem;
-	margin-bottom: 1.437rem;
+	margin-left: 1.1979vw;
+	margin-top: 0.9vw;
+	margin-bottom: 1.1979vw;
 	position: relative;
 	z-index: 2;	
 	flex-wrap: nowrap;
-
+	
 }
 
  .download, .store {
 	
-	
+
 	font-family: 'Open Sans', sans-serif;
-	font-size: 0.69916vw;
+	font-size: 0.78125vw;
 	font-weight: 300;
 	text-transform: uppercase;
 	color: #ffffff;
@@ -318,7 +319,7 @@ body {
 	position: absolute;
     z-index: 2;
     background: url("../img/subline_violet_athlets_1920.png") no-repeat 50% 50%; 
-    background-size: 1.04vw 0.2604vw;
+    background-size: 1.14vw 0.2604vw;
     top: 1.0417vw;
     left: -0.5vw;
     right: 0;
@@ -342,13 +343,36 @@ body {
 	position: absolute;
     z-index: 2;
     background: url("../img/subline_white_athlets_1920.png") no-repeat 50% 50%; 
-    background-size: 1.04vw 0.2604vw;
+    background-size: 1.14vw 0.2604vw;
     top: 1.0417vw;
     left: -0.5vw;
     right: 0;
     bottom: 0;
 }
 
+
+.number_three_players {
+	position: relative;
+	font-family: "Open Sans", sans-serif;
+	font-size: 0.9375vw;
+	color: #9173e6;
+	padding-top: 0.4167vw ;
+	padding-right: 0.3125vw ;
+	font-weight: 900;
+	
+}
+
+.number_three_players::after {
+	content: "";
+	position: absolute;
+    z-index: 1;
+    background: url("../img/subline_white_athlets_1920.png") no-repeat 50% 50%; 
+    background-size: 1.14vw 0.2604vw;
+    top: 1.0417vw;
+    left: -0.5vw;
+    right: 0;
+    bottom: 0;
+}
 
 .underline_violet {
 	fill: #5e42b0;
@@ -473,7 +497,7 @@ body {
 	margin-left: 0;
 	margin-right: 0;
 	position: relative;
-	background: url(../img/be-active_960.jpg);
+	background: url(../img/be-active_960.jpg) no-repeat 50% 50%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: #cbe7fd;
@@ -520,11 +544,8 @@ body {
 .description_box_find_contact {
 	
 	height: 100%;
-	
 	padding-left: 10vw;
 	padding-right: 6.6146vw;
-	
-
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -532,34 +553,59 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	
-
-	
+		
 }
 
+.number_h2 {  /*тут я устанавливаю номер заголовка*/
+
+	position: absolute;
+	top: 0;
+	left: calc(-1.25vw/2 - 6.6146vw);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.25vw;
+	
+	font-weight: 900;
+	color: #ffffff;
+	z-index: 4;
+	border: solid 1px red;
+}
 
 
 .h2_be_active,
 .h2_find_contact,
 .h2_work_it {
-		
+	margin: 0;
+	padding-top: 1.9531vw;
+	padding-bottom: 1.9531vw;
+	position: relative;	
 	font-family: 'Open Sans', sans-serif;
 	font-size: 4.1667vw;
-	line-height: 3.12vw;
 	font-weight: 700;
 	color: #e7e7e7;
 	text-transform: uppercase;
 	z-index: 1;
+	border: solid 1px red;
+}
 
+.number_h2::after { /* тут я устанавливаю фиолетовый квадрат-фон*/
+	content: "";
+	top: 0;
+	left: calc((8.75vw - 1.25vw)/ -2);
+	
+	width: 8.75vw;
+	height: 8.0729vw;
+	position: absolute;
+	background-image: url(../img/rectangle_3_1920.png);
+	background-size: 8.75vw 8.072917vw;
+
+	z-index: 2;
 }
 
 .h2_find_contact {
 	margin-right: auto;
 }
 
-.number_of_title {
 
-}
 
 .text_be_active,
 .text_find_contact,
@@ -573,24 +619,7 @@ body {
 }
 
 
-.square_violet {
-	top: 12vw;
-	left: calc((100% - 8.75vW)/2);
-	width: 8.75vw;
-	height: 8.072917vw;
-	position: absolute;
-	background-image: url(../img/rectangle_3_1920.png);
-	background-size: 8.75vw 8.072917vw;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
-	z-index: 777;
-}
+
 
 .footer {
 	padding-top: 11.927vw;
