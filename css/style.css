@@ -23,71 +23,15 @@ body {
 	padding-top: 2.3438vw;
 	padding-bottom: 5.792vw;
     max-width: 100%;
-   
     width: 100%;
-    
-    
     background: url(../img/football_1920.jpg) no-repeat 50% 50%;
     display: flex;
 	background-size: cover;
   	position: relative;
     flex-direction: column;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	
-}
-
-@media (min-width: 641px) and (max-width: 960px) {
-	.header {
-		background-image: url(../img/football_1280.jpg);
-		padding-top: 10.31vw;
-		padding-bottom: 9.479vw;
-	}
-
-	.logo_text{
-		width: 21.354vw;
-		height: 5.833vw;
-		
-	}
-
-	.title_box {
-		padding-left: 9.375vw;
-		margin-top: 18.8541vw;
-		margin-bottom: 32.604vw;
-	}
-
-	.h1-header {
-		font-size: 5vw;
-	}
-	.slogan_secondline {
-		padding-left: 20.31%;
-	}
-		
-	.ios, .android {
-	width: 32.396vw;
-	height: 8.0208vw;
-	background-size: 100% 8.0208vw;
-	}
-
-	
-}
-
-@media (max-width: 640px) {
-	
-	.header {
-		background-image: url(../img/football_767.jpg);
-		padding-top: 10.31vw;
-		padding-bottom: 26.25vw;
-	}
-	
-	.logo_text{
-		width: 41.5625vw;
-		height: 11.25vw;
-	}
-
-	.title_box {
-		margin-top: 42.5vw;
-		margin-bottom: 27.82vw;
-	}
 }
 
 
@@ -109,7 +53,7 @@ body {
 
 
 .logo-header {
-	
+	position: relative;
 	margin-right: auto;
 	margin-left: auto;
 	
@@ -161,7 +105,8 @@ body {
 
 
 .slogan_secondline {
-	padding-left: 26.5833%;
+	
+	font-size: 4.6875vw;
 }
 	
 
@@ -670,6 +615,7 @@ body {
     display: flex;
     flex-direction: column;
     z-index: 1;
+
     
   }
 
@@ -694,8 +640,7 @@ body {
 	position: relative;
 	margin-top: 11.927vw;
 	margin-bottom: 7.865vw;
-	margin-left: auto;
-	margin-right: auto;
+	
 	z-index: 1;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -790,4 +735,69 @@ body {
 	position: relative;
 	z-index: 1;
 	
+}
+
+
+@media (min-width: 641px) and (max-width: 960px) {
+	.header {
+		background-image: url(../img/football_1280.jpg);
+		padding-top: 5.2083vw;
+		padding-bottom: 11.8486vw;
+	}
+	
+
+	.logo_text {
+		width: 26.6925vw;
+		height: 7.29vw;
+		
+		
+	}
+
+	.title_box {
+
+		padding-left: 11.72vw;
+		margin-top: 23.5676vw;
+		margin-bottom: 40.755vw;
+	}
+
+	.h1-header {
+		font-size: 8.333vw;
+	}
+	
+	
+	.slogan_secondline {
+		padding-left: 13.67vw;
+		font-size: 8.33vw;
+
+	}
+		
+	.ios, .android {
+	width: 40.795vw;
+	height: 10.026vw;
+	background-size: 100% 10.026vw;
+	}
+
+	.download, .store {
+	font-size: 1.823vw;
+	}
+}
+
+@media (max-width: 640px) {
+	
+	.header {
+		background-image: url(../img/football_767.jpg);
+		padding-top: 10.31vw;
+		padding-bottom: 26.25vw;
+	}
+	
+	.logo_text{
+		width: 41.5625vw;
+		height: 11.25vw;
+
+	}
+
+	.title_box {
+		margin-top: 42.5vw;
+		margin-bottom: 27.82vw;
+	}
 }
