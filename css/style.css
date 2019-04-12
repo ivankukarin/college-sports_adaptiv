@@ -93,7 +93,7 @@ body {
 .h1-header {
 	
 	font-family: 'Open Sans', sans-serif;
-	font-size: 4.6875vw;
+	font-size: 5.625rem;
 	color: #ffffff;
 	text-transform: uppercase;
 	padding: 0;
@@ -105,8 +105,8 @@ body {
 
 
 .slogan_secondline {
-	
-	font-size: 4.6875vw;
+	padding-left: 23.45vw;
+	font-size: 5.625rem;
 }
 	
 
@@ -185,7 +185,7 @@ body {
  .download, .store {
 	
 	font-family: 'Open Sans', sans-serif;
-	font-size: 0.78125vw;
+	font-size: 0.875rem;
 	font-weight: 300;
 	text-transform: uppercase;
 	color: #ffffff;
@@ -207,16 +207,30 @@ body {
 .box_athlets_first, 
 .box_athlets_second, 
 .box_athlets_third {
+	position: relative;
 	padding-left: 52.55%;
 	padding-top: 1.25em;
 	z-index: 1;
 }
 
-.box_athlets_second,
+/*.box_athlets_second,
 .box_players_second  {
-	background-color: #efefef;
-	border: solid 1px #efefef;
+	background-color: #0a0e34;
+	border: solid 1px #0a0e34;
 	z-index: 1;
+}
+*/
+.box_athlets_second::after {
+	
+	content: '';
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0a0e34;
+    opacity: 0.05;
 }
 
 .box_athlets_third {
@@ -231,8 +245,8 @@ body {
 	margin-top: 1.2em;
 	margin-bottom: 1.2em;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 4.1667vw;
-	line-height: 3.12vw;
+	font-size: 5rem;
+	line-height: 3.744rem;
 	font-weight: 700;
 	color: #e7e7e7;
 	text-transform: uppercase;
@@ -246,8 +260,9 @@ body {
 .h3_players_first_box,
 .h3_players_second_box,
 .h3_players_third_box {
+	margin-bottom: 0.5em;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1.875vw;
+	font-size: 2.25rem;
 	letter-spacing: 0.05em;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -283,7 +298,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 0.9375vw;
 	color: #000000;
-	padding-top: 0.4167vw ;
+	padding-top: 0.2567vw ;
 	padding-right: 0.3125vw ;
 	font-weight: 900;
 	
@@ -308,7 +323,7 @@ body {
 	font-family: 'Open Sans-Bold', sans-serif;
 	font-size: 0.9375vw;
 	color: #0a0e34;
-	padding-top: 0.3125vw ;
+	padding-top: 0.2525vw ;
 	padding-right: 0.3125vw ;
 	font-weight: 900;
 	
@@ -371,9 +386,9 @@ body {
 .text_players_third_box {
 	width: 36.4583vw;
 	font-family: 'Open Sans-Bold', sans-serif;
-	font-size: 1.034166vw;
-	padding-bottom: 2em;
-	line-height: 1.2;
+	font-size: 1.25rem;
+	padding-bottom: 1.5em;
+	line-height: 1.4em;
 	font-weight: 400;
 	letter-spacing: 0.05em;
 	color: #000000;
@@ -411,6 +426,7 @@ body {
 .box_players_first, 
 .box_players_second, 
 .box_players_third {
+	position: relative;
 	padding-left: 10%;
 	padding-top: 1.25em;
 	z-index: 1;
@@ -421,6 +437,19 @@ body {
 	background-color: #0a0e34;
 	border: solid 1px #0a0e34;  /*почему без этой рамки появляется поле без фона, а с ней весь блок покрыт фоновым цветом?*/
 	z-index: 1;
+}
+
+.box_players_second::after {
+	
+	content: '';
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0a0e34;
+    opacity: 0.03;
 }
 
 .basketballer {
