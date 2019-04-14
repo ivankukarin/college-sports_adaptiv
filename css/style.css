@@ -456,13 +456,14 @@ body {
 
 
 .container_gallery {
-	
-	max-width: 1920px;
+	padding: 0;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 0;
-  	width: 100%;
+	
+	max-width: 1920px;
+	width: 100%;
   	position: relative;
+
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -475,10 +476,11 @@ body {
 .be-active,
 .find-contact,
 .work-it {
-	max-width: 100%;
+	width: 100%;
 	display: flex;
 	position: relative;
 }
+
 
 .card_title {
 	position: relative;
@@ -487,19 +489,17 @@ body {
 
 .pict-be-active,
 .pict-find-contact,
-.pict_work_it {
+.pict-work-it {
 	width: 50%;
-	background-size: cover;
-	background-repeat: no-repeat;
+	
 }
 
 .be-active-img,
-.find-contact-img
+.find-contact-img,
 .work-it-img {
 	width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
-
 }
 
 .be-active-img {
@@ -609,8 +609,8 @@ body {
 .text_be_active,
 .text_find_contact,
 .text_work_it {	
-	padding-bottom: 0;	
-	margin-bottom: 0;
+	padding: 0;
+	margin: 0;
 	font-family: 'Open Sans-Bold', sans-serif;	
 	font-size: 1.25vw;
 	line-height: 1.667em;
@@ -864,8 +864,69 @@ body {
 		left: 43.229vw;
 		background-image: url("../img/basketballer_436.png");
 	}
-
+	
+	.card_title {
+	position: relative;
+	width: 100%;
 }
+
+.pict-be-active,
+.pict-find-contact,
+.pict-work-it {
+	width: 50%;
+	
+.description_box {
+	padding-top: 13.5vw;
+	padding-left: 6.6146vw;
+	padding-right: 10vw;
+}
+
+.description_box_find_contact {
+	padding-top: 13.5vw;
+	padding-left: 10vw;
+	padding-right: 6.6146vw;
+	
+}
+
+.number_h2 {  /* устанавливаю номер заголовка и фиолетовый прямоугольник*/
+
+	position: absolute;
+	padding: 2.55vw 3.55vw 3.65vw 3.25vw ;
+	top: -0.65vw;
+	left: calc(-1.25vw/2 - 6.1vw - 3.55vw);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.25vw;
+	
+	font-weight: 700;
+	color: #ffffff;
+	background-color: #5e42b0;
+	z-index: 4;
+}
+
+
+.number_h2_2 {  /* устанавливаю номер заголовка и фиолетовый прямоугольник*/
+	position: absolute;
+	padding: 2.55vw 3.55vw 3.65vw 3.25vw;
+	top: -0.65vw;
+	right: -10.85vw;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.25vw;
+	
+	font-weight: 700;
+	color: #ffffff;
+	background-color: #5e42b0;
+	z-index: 4;
+}
+.h2_be_active,
+.h2_find_contact,
+.h2_work_it {
+	padding-bottom: 0.468em;
+font-size: 4.1667vw;
+.text_be_active,
+.text_find_contact,
+.text_work_it {	
+font-size: 1.25vw;
+}	
 
 @media (max-width: 640px) {
 	
