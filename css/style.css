@@ -208,11 +208,11 @@ body {
 .box_athlets_first, 
 .box_athlets_second, 
 .box_athlets_third {
-	padding-bottom: 3em;
-	position: relative;
+	padding-top: 3em;
+	padding-bottom: 3.5em;
 	padding-right: 10.364%;
-	padding-left: 52.55%;
-	padding-top: 1.25em;
+	padding-left: 52.55%;	
+	position: relative;
 	z-index: 1;
 }
 
@@ -226,7 +226,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #0a0e34;
+    background-color: #5e42b0;
     opacity: 0.05;
 }
 
@@ -238,8 +238,9 @@ body {
 
 .h2_athlets_title,
 .h2_players_title {
-	margin-top: 0.8em;
-	margin-bottom: 0.8em;
+	margin: 0;
+	padding-top: 0.9em;
+	padding-bottom: 1.2em;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 4.167vw;
 	line-height: 0.7487em;
@@ -255,7 +256,9 @@ body {
 .h3_players_first_box,
 .h3_players_second_box,
 .h3_players_third_box {
-	margin-bottom: 0.5em;
+	margin: 0;
+	padding-top: 0;
+	padding-bottom: 0.4em;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 01.875vw;
 	letter-spacing: 0.05em;
@@ -362,8 +365,9 @@ body {
 .text_players_first_box,
 .text_players_second_box,
 .text_players_third_box {
+	padding-top: 0;
 	padding-bottom: 0;
-	margin-bottom: 0;
+	margin: 0;
 	
 	font-family: 'Open Sans-Bold', sans-serif;
 	font-size: 1.0417vw;
@@ -406,11 +410,12 @@ body {
 .box_players_first, 
 .box_players_second, 
 .box_players_third {
-	padding: 3rem;
-	position: relative;
+	padding-top: 3.5em;
+	padding-bottom: 3.5em;	
 	padding-left: 10%;
 	padding-right: 44.74%;
-	padding-top: 1.25em;
+	
+	position: relative;
 	z-index: 1;
 }
 
@@ -451,7 +456,7 @@ body {
 
 
 .container_gallery {
-
+	
 	max-width: 1920px;
 	margin-left: auto;
 	margin-right: auto;
@@ -470,10 +475,9 @@ body {
 .be-active,
 .find-contact,
 .work-it {
-	width: 100%;
+	max-width: 100%;
 	display: flex;
 	position: relative;
-
 }
 
 .card_title {
@@ -481,29 +485,35 @@ body {
 	width: 50%;
 }
 
-.card_be_active {
+.pict-be-active,
+.pict-find-contact,
+.pict_work_it {
 	width: 50%;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.be-active-img,
+.find-contact-img
+.work-it-img {
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+.be-active-img {
 	background-color: #cbe7fd;
+
 }
 
-.card_find_contact {
-	width: 50%;
-	background-size: cover;
-	background-repeat: no-repeat;
+.find-contact-img {
 	background-color: #e2685c;
-			
 }
 
-.card_work_it {
-	width: 50%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-color: #5b7aac;
-		
+.work-it-img {
+	background-color: #5b7aac;		
 }
-
 
 .description_box {
 	padding-top: 13.5vw;
@@ -653,8 +663,7 @@ body {
 
 .title_box_footer {
 	position: relative;
-	margin-top: 11.927vw;
-	margin-bottom: 7.865vw;
+	padding-bottom: 7.865vw;
 	
 	z-index: 1;
 	display: -webkit-flex;
