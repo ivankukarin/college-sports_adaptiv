@@ -582,6 +582,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 4.1667vw;
 	font-weight: 700;
+	/*letter-spacing: 0.05em;*/
 	color: #e7e7e7;
 	text-transform: uppercase;
 	z-index: 1;
@@ -600,11 +601,6 @@ body {
 	opacity: 0.3;
 	z-index: 2;
 }
-
-.h2_find_contact {
-	margin-right: auto;
-}
-
 
 
 .text_be_active,
@@ -898,13 +894,7 @@ body {
 	}
 
 
-	.description_box {
-		padding-top: 3.5em;
-		padding-bottom:6em;	
-		padding-left: 4.17vw;
-		padding-right: 9.36vw;
-	}
-
+	.description_box,
 	.description_box_find_contact {
 		padding-top: 3.5em;
 		padding-bottom:6em;	
@@ -912,8 +902,38 @@ body {
 		padding-right: 9.36vw;
 	}
 
-	
 
+	.number_h2,
+	.number_h2_2  {  /* устанавливаю номер заголовка и фиолетовый прямоугольник*/
+		position: absolute;
+		padding: 1.416em 1.85em 2em 1.85em;
+		top: -18vw;
+		left: 0;
+		right: inherit;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 3.125vw;
+		font-weight: 700;
+		letter-spacing: 0.05em;
+		color: #ffffff;
+		background-color: #5e42b0;
+		z-index: 4;
+		}
+
+	.number_h2::after,
+	.number_h2_2::after {  /*тут я устанавливаю подчеркивание для номера в  фиолетовом прямоугольнике*/
+		content: "";
+		top: 9.11vw;
+		left: 6vw;
+		
+		width: 3.26vw;
+		height: 0.651vw;
+		position: absolute;
+		background-image: url(../img/subline_number_gallery.png);
+		opacity: 0.3;
+		z-index: 2;
+	}
+			
+	
 	.h2_be_active,
 	.h2_find_contact,
 	.h2_work_it {
