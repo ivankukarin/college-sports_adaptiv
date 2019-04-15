@@ -369,7 +369,7 @@ body {
 	padding-bottom: 0;
 	margin: 0;
 	
-	font-family: 'Open Sans-Bold', sans-serif;
+	font-family: 'Open Sans Bold', sans-serif;
 	font-size: 1.0417vw;
 	
 	line-height: 1.4em;
@@ -405,6 +405,7 @@ body {
 
 .players_container {
 	position: relative;
+	overflow: hidden;
 }
 
 .box_players_first, 
@@ -611,7 +612,7 @@ body {
 .text_work_it {	
 	padding: 0;
 	margin: 0;
-	font-family: 'Open Sans-Bold', sans-serif;	
+	font-family: "Open Sans Bold", sans-serif;	
 	font-size: 1.25vw;
 	line-height: 1.667em;
 	font-weight: 500;
@@ -773,8 +774,6 @@ body {
 	.logo_text {
 		width: 26.6925vw;
 		height: 7.29vw;
-		
-		
 	}
 
 	.title_box {
@@ -792,7 +791,6 @@ body {
 	.slogan_secondline {
 		padding-left: 13.67vw;
 		font-size: 8.33vw;
-
 	}
 		
 	.ios, .android {
@@ -801,21 +799,25 @@ body {
 		background-size: 100% 10.026vw;
 	}
 
-	.download, .store {
+	.download,
+	.store {
 		font-size: 1.823vw;
 	}
 	
 	.box_athlets_first, 
 	.box_athlets_second, 
 	.box_athlets_third {
-		padding-top: 0.8em;
+		padding-top: 2em;
+		padding-bottom: 2em;
 		padding-left: 37.89%;
 		padding-right: 4.3%;
 	}
 
 	.h2_athlets_title,
 	.h2_players_title {
-		margin-bottom: 0.8em;
+		
+		padding-bottom: 0.7em;
+		margin: 0;
 		font-size: 10.4167vw;
 	}
 
@@ -825,8 +827,9 @@ body {
 	.h3_players_first_box,
 	.h3_players_second_box,
 	.h3_players_third_box {
-		margin-top: 0.6em;
-		margin-bottom: 0.6em;
+		padding-top: 0;
+		padding-bottom: 0.4em;
+		margin: 0;
 		font-size: 4.1667vw;
 	}
 
@@ -837,13 +840,14 @@ body {
 	.text_players_second_box,
 	.text_players_third_box {
 		font-size: 2.083vw;
+		line-height: 1.75em;
 	}
 
 	.footballer {
 		width: 64.71vw;
 		height: 91.02vw;
 		position: absolute;
-		top: 12.24vw;
+		top: 12.53vw;
 		left: -21.09vw;
 		z-index: 777;
 		background-image: url("../img/footballer_497.png");
@@ -852,7 +856,8 @@ body {
 	.box_players_first, 
 	.box_players_second, 
 	.box_players_third {
-		padding-top: 0.8em;
+		padding-top: 2em;
+		padding-bottom: 2em;
 		padding-left: 4.1667%;
 		padding-right: 40.234%;
 	}
@@ -865,68 +870,81 @@ body {
 		background-image: url("../img/basketballer_436.png");
 	}
 	
+	.be-active,
+	.find-contact,
+	.work-it {
+		flex-wrap: wrap;
+	}
+
+	.container_gallery {
+		width: 100%;
+	}
+
+	
 	.card_title {
-	position: relative;
-	width: 100%;
+		
+		width: 100%;
+	}
+
+	.pict-be-active,
+	.pict-find-contact,
+	.pict-work-it {
+		width: 100%;
+		
+	}
+
+	.description_box {
+		padding-top: 13.5vw;
+		padding-left: 6.6146vw;
+		padding-right: 10vw;
+	}
+
+	.description_box_find_contact {
+		padding-top: 13.5vw;
+		padding-left: 10vw;
+		padding-right: 6.6146vw;
+	}
+
+	.number_h2 {  /* устанавливаю номер заголовка и фиолетовый прямоугольник*/
+		position: absolute;
+		padding: 2.55vw 3.55vw 3.65vw 3.25vw ;
+		top: -0.65vw;
+		left: calc(-1.25vw/2 - 6.1vw - 3.55vw);
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1.25vw;
+		font-weight: 700;
+		color: #ffffff;
+		background-color: #5e42b0;
+		z-index: 4;
+		}
+
+
+	.number_h2_2 {  /* устанавливаю номер заголовка и фиолетовый прямоугольник для find contact*/
+		position: absolute;
+		padding: 2.55vw 3.55vw 3.65vw 3.25vw;
+		top: -0.65vw;
+		right: -10.85vw;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1.25vw;
+		font-weight: 700;
+		color: #ffffff;
+		background-color: #5e42b0;
+		z-index: 4;
+		}
+
+	.h2_be_active,
+	.h2_find_contact,
+	.h2_work_it {
+		padding-bottom: 0.468em;
+		font-size: 10.417vw;
+	}
+
+	.text_be_active,
+	.text_find_contact,
+	.text_work_it {	
+		font-size: 3.125vw;
+	}	
 }
-
-.pict-be-active,
-.pict-find-contact,
-.pict-work-it {
-	width: 50%;
-	
-.description_box {
-	padding-top: 13.5vw;
-	padding-left: 6.6146vw;
-	padding-right: 10vw;
-}
-
-.description_box_find_contact {
-	padding-top: 13.5vw;
-	padding-left: 10vw;
-	padding-right: 6.6146vw;
-	
-}
-
-.number_h2 {  /* устанавливаю номер заголовка и фиолетовый прямоугольник*/
-
-	position: absolute;
-	padding: 2.55vw 3.55vw 3.65vw 3.25vw ;
-	top: -0.65vw;
-	left: calc(-1.25vw/2 - 6.1vw - 3.55vw);
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.25vw;
-	
-	font-weight: 700;
-	color: #ffffff;
-	background-color: #5e42b0;
-	z-index: 4;
-}
-
-
-.number_h2_2 {  /* устанавливаю номер заголовка и фиолетовый прямоугольник*/
-	position: absolute;
-	padding: 2.55vw 3.55vw 3.65vw 3.25vw;
-	top: -0.65vw;
-	right: -10.85vw;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.25vw;
-	
-	font-weight: 700;
-	color: #ffffff;
-	background-color: #5e42b0;
-	z-index: 4;
-}
-.h2_be_active,
-.h2_find_contact,
-.h2_work_it {
-	padding-bottom: 0.468em;
-font-size: 4.1667vw;
-.text_be_active,
-.text_find_contact,
-.text_work_it {	
-font-size: 1.25vw;
-}	
 
 @media (max-width: 640px) {
 	
@@ -936,7 +954,7 @@ font-size: 1.25vw;
 		padding-bottom: 26.25vw;
 	}
 	
-	.logo_text{
+	.logo_text {
 		width: 41.5625vw;
 		height: 11.25vw;
 
