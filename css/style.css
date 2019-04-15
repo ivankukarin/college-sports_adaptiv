@@ -1022,22 +1022,274 @@ body {
 	}
 }
 
+
+
+
+
+
 @media (max-width: 640px) {
-	
 	.header {
 		background-image: url(../img/football_767.jpg);
 		padding-top: 10.31vw;
 		padding-bottom: 26.25vw;
 	}
 	
-	.logo_text {
-		width: 41.5625vw;
-		height: 11.25vw;
 
+	.logo_text {
+		width: 41.56vw;
+		height: 11.25vw;
 	}
 
 	.title_box {
-		margin-top: 42.5vw;
-		margin-bottom: 27.82vw;
+
+		padding-left: 6.25vw;
+		padding-right: 6.25vw;
+		margin-top: 40.32vw;
+		margin-bottom: 25.94vw;
+	}
+
+	.h1-header {
+		font-size: 8.75vw;
+		line-height: 9.69vw;
+	}
+	
+	
+	.slogan_secondline {
+		padding-top: 0.6em;
+		padding-left: 13.75vw;
+		font-size: 8.75vw;
+		line-height: 1.2;
+
+	}
+		
+	.ios, .android {
+		width: 87.5vw;
+		height: 10.94vw;
+		background-size: 100% 10.026vw;
+	}
+
+	.download,
+	.store {
+		font-size: 2.5vw;
+	}
+	
+	.box_athlets_first, 
+	.box_athlets_second, 
+	.box_athlets_third {
+		padding-top: 2em;
+		padding-bottom: 2em;
+		padding-left: 37.89%;
+		padding-right: 4.3%;
+	}
+
+	.h2_athlets_title,
+	.h2_players_title {
+		
+		padding-bottom: 0.7em;
+		margin: 0;
+		font-size: 10.4167vw;
+	}
+
+	.h3_athlets_first_box,
+	.h3_athlets_second_box,
+	.h3_athlets_third_box,
+	.h3_players_first_box,
+	.h3_players_second_box,
+	.h3_players_third_box {
+		padding-top: 0;
+		padding-bottom: 0.4em;
+		margin: 0;
+		font-size: 4.1667vw;
+	}
+
+	.text_athlets_first_box,
+	.text_athlets_second_box,
+	.text_athlets_third_box,
+	.text_players_first_box,
+	.text_players_second_box,
+	.text_players_third_box {
+		font-size: 2.083vw;
+		line-height: 1.75em;
+	}
+
+	.footballer {
+		width: 64.71vw;
+		height: 91.02vw;
+		position: absolute;
+		top: 12.53vw;
+		left: -21.09vw;
+		z-index: 777;
+		background-image: url("../img/footballer_497.png");
+	}
+
+	.box_players_first, 
+	.box_players_second, 
+	.box_players_third {
+		padding-top: 2em;
+		padding-bottom: 2em;
+		padding-left: 4.1667%;
+		padding-right: 40.234%;
+	}
+	
+	.basketballer {
+		width: 56.77vw;
+		height: 73.57vw;
+		top: 5.078vw;
+		left: 43.229vw;
+		background-image: url("../img/basketballer_436.png");
+	}
+	
+	.be-active,
+	.find-contact,
+	.work-it {
+		flex-wrap: wrap;
+	}
+
+	.container_gallery {
+		width: 100%;
+	}
+
+	
+	.card_title {
+		
+		width: 100%;
+	}
+
+	.pict-be-active,
+	.pict-find-contact,
+	.pict-work-it {
+		width: 100%;
+		
+	}
+	
+	.pict-find-contact {
+		order: -1;
+	}
+
+
+	.description_box,
+	.description_box_find_contact {
+		padding-top: 3.5em;
+		padding-bottom:6em;	
+		padding-left: 4.17vw;
+		padding-right: 9.36vw;
+	}
+
+
+	.number_h2,
+	.number_h2_2  {  /* устанавливаю номер заголовка и фиолетовый прямоугольник*/
+		position: absolute;
+		padding: 1.416em 1.85em 2em 1.85em;
+		top: -18vw;
+		left: 0;
+		right: inherit;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 3.125vw;
+		font-weight: 700;
+		letter-spacing: 0.05em;
+		color: #ffffff;
+		background-color: #5e42b0;
+		z-index: 4;
+		}
+
+	.number_h2::after,
+	.number_h2_2::after {  /*тут я устанавливаю подчеркивание для номера в  фиолетовом прямоугольнике*/
+		content: "";
+		top: 9.11vw;
+		left: 6vw;
+		
+		width: 3.26vw;
+		height: 0.651vw;
+		position: absolute;
+		background-image: url(../img/subline_number_gallery.png);
+		opacity: 0.3;
+		z-index: 2;
+	}
+			
+	
+	.h2_be_active,
+	.h2_find_contact,
+	.h2_work_it {
+		padding-bottom: 0;
+		font-size: 10.417vw;
+	}
+
+	.text_be_active,
+	.text_find_contact,
+	.text_work_it {	
+		padding-top: 0.5em;
+		font-size: 3.125vw;
+		line-height: normal;
+	}	
+
+
+
+	.footer {
+	padding-top: 16.4vw;
+	padding-bottom: 3.125vw;
+	background: url(../img/game_767.jpg) 50% 50%;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	
+	}
+
+	.title_box_footer {
+		padding-bottom: 36.33vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+	}
+
+	.title-logo-footer {
+		width: 16.93vw;
+		height: 17.84vw;
+		padding-bottom: 8.07vw;
+		
+	}
+
+	.h2-box {
+		padding: 0;
+		margin: 0;
+		display: flex;
+
+
+		
+	}
+
+	.h2-footer {
+		font-size: 10.41vw;
+		letter-spacing: 0.055em;
+		margin-left: auto;
+		margin-right: auto;
+	
+	}
+
+	.text-undertitle-footer {
+		font-size: 4.69vw;
+		margin-left: auto;
+		margin-right: auto;
+	
+		
+	}
+
+	.apps-buttons-footer {
+		width: 100%;
+		height: 4.0104vw;
+		margin-bottom: 13.646vw;
+	}
+
+	.logo-surface-footer {
+	
+	margin-left: auto;
+	margin-right: auto;
+
+	padding: 0;
+	width: 26.69vw;
+	height: 7.3vw;
 	}
 }
