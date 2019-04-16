@@ -1064,118 +1064,127 @@ body {
 
 	}
 		
-.apps_buttons {
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	width: 87.5%;
-	z-index: 1;	
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
+	.apps_buttons {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		width: 87.5%;
+		z-index: 1;	
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
 
-}
+	}
 
-.ios, .android {
-	padding-left: 25.635vw;
-	width: 100%;
-	height: 10.94vw;
-	background-image: url("../img/rounded_rectangle_1_copy_540.png");
-	background-repeat: no-repeat;
-	background-size: 100% 10.94vw;
-	position: flex;
-	z-index: 1;	
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	position: relative;
-	text-decoration: none;
-	justify-content: center;
-	align-content: center;
-	
-}
+	.ios, .android {
+		padding-left: 25.635vw;
+		width: 100%;
+		height: 10.94vw;
+		background-image: url("../img/rounded_rectangle_1_copy_540.png");
+		background-repeat: no-repeat;
+		background-size: 100% 10.94vw;
+		position: flex;
+		z-index: 1;	
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		position: relative;
+		text-decoration: none;
+		justify-content: center;
+		align-content: center;
+		
+	}
 
-.ios {
-	
-	margin-bottom:  4.375vw;
-	display: flex;
-}
+	.ios {
+		
+		margin-bottom:  4.375vw;
+		display: flex;
+	}
 
-.android {
-	margin: 0;
-	display: flex;
-}
+	.android {
+		margin: 0;
+		display: flex;
+	}
 
-.ios_icon, .android_icon {
-	width: 6.25vw;
-	height: 7.25vw;
-	margin-left: auto;
-	
-	margin: 0;
-	align-self: center;
-	fill: #ffffff;
-	margin: 0;
-	position: relative;
-	z-index: 2;	
+	.ios_icon, .android_icon {
+		width: 6.25vw;
+		height: 7.25vw;
+		margin-left: auto;
+		
+		margin: 0;
+		align-self: center;
+		fill: #ffffff;
+		margin: 0;
+		position: relative;
+		z-index: 2;	
 
-}
+		}
 
-.android_icon {
-	
-}
+	.android_icon {
+		
+	}
 
-.box_text_btn {
-	padding-left: 3.125%;
-	margin-right: auto;
-	margin-top: 0;
-	margin-bottom: 0;
-	position: relative;
-	z-index: 1;	
-	display: flex;
-	flex-wrap: nowrap;
-	flex-direction: column;
-	justify-content: center;
-}
+	.box_text_btn {
+		padding-left: 3.125%;
+		margin-right: auto;
+		margin-top: 0;
+		margin-bottom: 0;
+		position: relative;
+		z-index: 1;	
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: column;
+		justify-content: center;
+	}
 
- .download, .store {
-	
-	font-family: 'Open Sans', sans-serif;
-	font-size: 2.5vw;
-	font-weight: 400;
-	text-transform: uppercase;
-	letter-spacing: 0.05em;
-	color: #ffffff;
-	position: relative;
-	z-index: 2;	
-}
-	
-.store {
-	font-weight: 700;
-} 
+	 .download, .store {
+		
+		font-family: 'Open Sans', sans-serif;
+		font-size: 2.5vw;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		color: #ffffff;
+		position: relative;
+		z-index: 2;	
+	}
+		
+	.store {
+		font-weight: 700;
+	} 
 
-
+	.athles_container {
+		
+	}
 
 	.box_athlets_first, 
 	.box_athlets_second, 
 	.box_athlets_third {
-		padding-top: 2em;
+		padding-top: 4em;
 		padding-bottom: 2em;
-		padding-left: 37.89%;
-		padding-right: 4.3%;
+		padding-left: 6.25%;
+		padding-right: 6.25%;
+	}
+
+	
+	.h2_athlets_title,
+	.h2_players_title  {
+		position: absolute;
+		top: -87.81vw;
 	}
 
 	.h2_athlets_title,
 	.h2_players_title {
-		
-		padding-bottom: 0.7em;
+		padding-top: 0;
+		padding-bottom: 4em;
 		margin: 0;
-		font-size: 10.4167vw;
+		font-size: 15.625vw;
 	}
 
 	.h3_athlets_first_box,
@@ -1187,7 +1196,7 @@ body {
 		padding-top: 0;
 		padding-bottom: 0.4em;
 		margin: 0;
-		font-size: 4.1667vw;
+		font-size: 7.1875vw;
 	}
 
 	.text_athlets_first_box,
@@ -1196,35 +1205,48 @@ body {
 	.text_players_first_box,
 	.text_players_second_box,
 	.text_players_third_box {
-		font-size: 2.083vw;
+		font-size: 4.6875vw;
 		line-height: 1.75em;
 	}
 
 	.footballer {
-		width: 64.71vw;
-		height: 91.02vw;
+		width: 60vw;
+		height: 87.81vw;
 		position: absolute;
-		top: 12.53vw;
-		left: -21.09vw;
+		top: -70.625vw;
+		left: 21.875vw;
 		z-index: 777;
-		background-image: url("../img/footballer_497.png");
+		background-image: url("../img/footballer_192.png");
 	}
 
 	.box_players_first, 
 	.box_players_second, 
 	.box_players_third {
-		padding-top: 2em;
+		padding-top: 4em;
 		padding-bottom: 2em;
-		padding-left: 4.1667%;
-		padding-right: 40.234%;
+		padding-left: 6.25%;
+		padding-right: 6.25%;;
 	}
+
+	 .box_athlets_first,
+	 .box_players_first {
+		padding-top: 5em;
+		margin-top: 95.625vw;
+		background-color: #fafafa;
+	}
+		
+	.box_athlets_second,
+	.box_players_second {
+		background-color: #f5f4f9;
+	} 
 	
+
 	.basketballer {
-		width: 56.77vw;
-		height: 73.57vw;
-		top: 5.078vw;
-		left: 43.229vw;
-		background-image: url("../img/basketballer_436.png");
+		width: 94.375vw;
+		height: 77.5vw;
+		top: 25vw;
+		left: 2.8125vw;
+		background-image: url("../img/basketballer_302.png");
 	}
 	
 	.be-active,
