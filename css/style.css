@@ -174,7 +174,7 @@ body {
 .box_text_btn {
 	margin-top: auto;
 	margin-bottom: auto;
-	margin-left: 8.039%;
+	padding-left: 8.039%;
 	position: relative;
 	z-index: 1;	
 	display: flex;
@@ -953,15 +953,17 @@ body {
 
 
 	.footer {
-	padding-top: 16.4vw;
-	padding-bottom: 3.125vw;
-	background: url(../img/game_767.jpg) 50% 50%;
-
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
+		padding-top: 16.4vw;
+		padding-bottom: 3.125vw;
+		background: url(../img/game_767.jpg) 50% 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
 	
 	}
 
@@ -1013,12 +1015,12 @@ body {
 
 	.logo-surface-footer {
 	
-	margin-left: auto;
-	margin-right: auto;
+		margin-left: auto;
+		margin-right: auto;
 
-	padding: 0;
-	width: 26.69vw;
-	height: 7.3vw;
+		padding: 0;
+		width: 26.69vw;
+		height: 7.3vw;
 	}
 }
 
@@ -1062,17 +1064,103 @@ body {
 
 	}
 		
-	.ios, .android {
-		width: 87.5vw;
-		height: 10.94vw;
-		background-size: 100% 10.026vw;
-	}
+.apps_buttons {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.5%;
+	z-index: 1;	
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
 
-	.download,
-	.store {
-		font-size: 2.5vw;
-	}
+}
+
+.ios, .android {
+	padding-left: 25.635vw;
+	width: 100%;
+	height: 10.94vw;
+	background-image: url("../img/rounded_rectangle_1_copy_540.png");
+	background-repeat: no-repeat;
+	background-size: 100% 10.94vw;
+	position: flex;
+	z-index: 1;	
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	position: relative;
+	text-decoration: none;
+	justify-content: center;
+	align-content: center;
 	
+}
+
+.ios {
+	
+	margin-bottom:  4.375vw;
+	display: flex;
+}
+
+.android {
+	margin: 0;
+	display: flex;
+}
+
+.ios_icon, .android_icon {
+	width: 6.25vw;
+	height: 7.25vw;
+	margin-left: auto;
+	
+	margin: 0;
+	align-self: center;
+	fill: #ffffff;
+	margin: 0;
+	position: relative;
+	z-index: 2;	
+
+}
+
+.android_icon {
+	
+}
+
+.box_text_btn {
+	padding-left: 3.125%;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	position: relative;
+	z-index: 1;	
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: center;
+}
+
+ .download, .store {
+	
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2.5vw;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: #ffffff;
+	position: relative;
+	z-index: 2;	
+}
+	
+.store {
+	font-weight: 700;
+} 
+
+
+
 	.box_athlets_first, 
 	.box_athlets_second, 
 	.box_athlets_third {
