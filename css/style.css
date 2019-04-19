@@ -2,7 +2,6 @@
 body {
 	
 	width: 100%;
-	max-width: 1920px;
 	margin: 0;
 	padding: 0;
 	
@@ -53,6 +52,7 @@ body {
 
 
 .logo-header {
+	width: 9.95vw;
 	position: relative;
 	margin-right: auto;
 	margin-left: auto;
@@ -115,7 +115,6 @@ body {
 .apps_buttons {
 	position: relative;
 	width: 100%;
-	
 	z-index: 1;	
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -171,6 +170,7 @@ body {
 }
 
 .box_text_btn {
+	width: 60%;
 	margin-top: auto;
 	margin-bottom: auto;
 	padding-left: 8.039%;
@@ -369,7 +369,7 @@ body {
 	margin: 0;
 	
 	font-family: 'Open Sans Bold', sans-serif;
-	font-size: 1.0417vw;
+	font-size: calc(0.416vw + 12px);
 	
 	line-height: 1.4em;
 	font-weight: 400;
@@ -485,6 +485,11 @@ body {
 .card_title {
 	position: relative;
 	width: 50%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
 }
 
 .pict-be-active,
@@ -516,15 +521,23 @@ body {
 }
 
 .description_box {
-	padding-top: 13.5vw;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-top: 5vw;
 	padding-left: 6.6146vw;
 	padding-right: 10vw;
+	padding-bottom: 5vw;
+
+
 }
 
 .description_box_find_contact {
-	padding-top: 13.5vw;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-top: 5vw;
 	padding-left: 10vw;
 	padding-right: 6.6146vw;
+	padding-bottom: 5vw;
 	
 }
 
@@ -557,19 +570,7 @@ body {
 	z-index: 4;
 }
 
-.number_h2_2::after {  /*тут я устанавливаю подчеркивание для номера в  фиолетовом прямоугольнике*/
-	content: "";
-	top: 4.51vw;
-	left: 3.2vw;
-	
-	width: 1.25vw;
-	height: 0.26vw;
-	position: absolute;
-	background-image: url(../img/subline_number_gallery.png);
-	background-size: 8.75vw 8.072917vw;
-	opacity: 0.3;
-	z-index: 2;
-}
+
 
 .h2_be_active,
 .h2_find_contact,
@@ -601,14 +602,26 @@ body {
 	z-index: 2;
 }
 
-
+.number_h2_2::after {  /*тут я устанавливаю подчеркивание для номера в  фиолетовом прямоугольнике*/
+	content: "";
+	top: 4.51vw;
+	left: 3.2vw;
+	
+	width: 1.25vw;
+	height: 0.26vw;
+	position: absolute;
+	background-image: url(../img/subline_number_gallery.png);
+	
+	opacity: 0.3;
+	z-index: 2;
+}
 .text_be_active,
 .text_find_contact,
 .text_work_it {	
 	padding: 0;
 	margin: 0;
 	font-family: "Open Sans Bold", sans-serif;	
-	font-size: 1.25vw;
+	font-size: calc(0.83vw + 8px);
 	line-height: 1.667em;
 	font-weight: 500;
 	letter-spacing: 0.05em;
@@ -897,7 +910,7 @@ body {
 	.description_box,
 	.description_box_find_contact {
 		padding-top: 3.5em;
-		padding-bottom:6em;	
+		padding-bottom: 6em;	
 		padding-left: 4.17vw;
 		padding-right: 9.36vw;
 	}
