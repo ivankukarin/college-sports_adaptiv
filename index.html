@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="fonts/OpenSans-Bold.ttf" rel="stylesheet">
-    <link href="fonts/OpenSans-Bold.woff" rel="stylesheet">
-    <link href="fonts/OpenSans-Bold.woff2" rel="stylesheet">
-    <link href="fonts/OpenSans-Regular.ttf" rel="stylesheet">
-    <link href="fonts/OpenSans-Regular.woff" rel="stylesheet">
-    <link href="fonts/OpenSans-Regular.woff2" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+    <title>BE RECRUITED, PLAY COLLEGE SPORTS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+    	@fontface {
+			font-family: "Open Sans";
+			src: url("../fonts/OpenSans-Regular.ttf") format ("truetype"),
+			src: url("../fonts/OpenSans-Regular.woff") format ("woff");
+			src: url("../fonts/OpenSans-Regular.woff2") format ("woff2");
+		}
+
+		@fontface {
+			font-family: "Open Sans-Bold";
+			src: url("../fonts/OpenSans-Bold.ttf") format ("truetype"),
+			src: url("../fonts/OpenSans-Bold.woff") format ("woff"),
+			src: url("../fonts/OpenSans-Bold.woff2") format ("woff2");
+		}
+    </style>
 </head>
 <body>
 	<header class="header">
@@ -56,8 +65,8 @@
 		
 	<main>
 		<section class="athles_container">
+			<h2 class="h2_athlets_title">athlets</h2>
 			<article class="box_athlets_first">
-				<h2 class="h2_athlets_title">athlets</h2>
 				<h3 class="h3_athlets_first_box">
 					<span class="number_one">01</span>connection
 				</h3>
@@ -76,13 +85,21 @@
 				<span class="number_three">03</span>growth</h3>
 				<p class="text_athlets_third_box">Resources and tools for you to get better as a student Athelte. Access 	to training classes, tutor sessions, etc</p>
 			</article>
-			<article class="footballer"></article>
+			
+			<picture class="footballer">
+						<source srcset="img/footballer_192.png" media="(max-width: 640px)">
+						<source srcset="img/footballer_497.png" media="(min-width: 641px) and (max-width: 960px)">
+						<source srcset="img/footballer_566.png" media="(min-width: 961px)">
+						<img class="footballer_img" src="img/footballer_566.png" alt='footballer'>
+			</picture>	
+
+			
 		</section>
 
 
 		<section class="players_container">
+			<h2 class="h2_players_title">players</h2>
 			<article class="box_players_first">
-					<h2 class="h2_players_title">players</h2>
 					<h3 class="h3_players_first_box"><span class="number_one">01</span>connection</h3>
 					<p class="text_players_first_box">Connect with talented athlete directly, you can watch their skills through 
 					video showreels directly from Surface 1.</p>
@@ -95,11 +112,20 @@
 					<h3 class="h3_players_third_box"><span class="number_three_players">03</span>growth</h3>
 					<p class="text_players_third_box">Save your time, recruit proper athlets for your team.</p>
 			</article>
-			<article class="basketballer"></article>
+
+			
+			<picture class="basketballer">
+						<source srcset="img/basketballer_302.png" media="(max-width: 640px)">
+						<source srcset="img/basketballer_436.png" media="(min-width: 641px) and (max-width: 960px)">
+						<source srcset="img/basketballer_991.png" media="(min-width: 961px)">
+						<img class="basketballer_img" src="/img/basketballer_991.png" alt='basketballer'>
+			</picture>	
+			
+
 		</section>
 
 
-		<section class="container_gallery">
+		<div class="container_gallery">
 			<article class="be-active">
 				
 				<picture class="pict-be-active">
@@ -149,7 +175,7 @@
 					</div>
 				</div>
 			</article>
-		</section>
+		</div>
 	</main>
 
 
