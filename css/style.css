@@ -1,29 +1,35 @@
 
 @font-face {
 	font-family: "Open Sans";
-	src: url("../fonts/OpenSans-Regular.ttf") format ('truetype');
-	src: url("../fonts/OpenSans-Regular.woff") format ("woff");
-	src: url("../fonts/OpenSans-Regular.woff2") format ("woff2");
+	src: url("../fonts/OpenSans-Regular.ttf") format ('truetype'), 
+	url("../fonts/OpenSans-Regular.woff") format ("woff"),
+	url("../fonts/OpenSans-Regular.woff2") format ("woff2");
+	font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
 	font-family: "Open Sans Bold";
-	src: url("../fonts/OpenSans-Bold.ttf") format ("truetype");
-	src: url("../fonts/OpenSans-Bold.woff") format ("woff");
-	src: url("../fonts/OpenSans-Bold.woff2") format ("woff2");
+	src: url("../fonts/OpenSans-Bold.ttf") format ("truetype"),
+		url("../fonts/OpenSans-Bold.woff") format ("woff"),
+		url("../fonts/OpenSans-Bold.woff2") format ("woff2");
 	font-weight: bold;
+	font-style: normal;
 }
 
 body {
-	
 	width: 100%;
 	margin: 0;
 	padding: 0;
 	
 	background-color: #ffffff;
 	position: relative;
-
 }
+
+picture {
+	font-size: 0;
+}
+
 .container {
 	width: 100%;
 	max-width: 1920px;
@@ -1066,12 +1072,16 @@ body {
 
 
 @media (max-width: 640px) {
+
 	.header {
 		background-image: url(../img/football_767.jpg);
 		padding-top: 10.31vw;
 		padding-bottom: 26.25vw;
 	}
 	
+	.logo-header {
+	width:41.56vw;
+	}
 
 	.logo_text {
 		width: 41.56vw;
@@ -1276,6 +1286,9 @@ body {
 		background-color: #f5f4f9;
 	} 
 	
+	.box_players_first {
+		margin-top: 0;
+	}
 
 	.basketballer_img {
 		width: 94.375vw;
@@ -1304,7 +1317,6 @@ body {
 	.pict-find-contact,
 	.pict-work-it {
 		width: 100%;
-		
 	}
 	
 	.pict-find-contact {
